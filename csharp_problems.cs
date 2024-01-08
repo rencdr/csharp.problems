@@ -47,3 +47,27 @@ public bool IsPalindrome(int x) {
     return true;
 }
 */
+/*4.Roman to Integer-Convert a Roman numeral to an integer. Input is guaranteed to be within the range from 1 to 3999.
+public int RomanToInt(string s) {
+    Dictionary<char, int> romanDict = new Dictionary<char, int> {
+        { 'I', 1 },
+        { 'V', 5 },
+        { 'X', 10 },
+        { 'L', 50 },
+        { 'C', 100 },
+        { 'D', 500 },
+        { 'M', 1000 }
+    };
+    
+    int result = 0;
+    int prevValue = 0;
+    
+    for (int i = s.Length - 1; i >= 0; i--) {
+        int value = romanDict[s[i]];
+        result += (value >= prevValue) ? value : -value;
+        prevValue = value;
+    }
+    
+    return result;
+}
+*/
