@@ -28,3 +28,22 @@ public int Reverse(int x) {
     return (reversedX >= int.MinValue && reversedX <= int.MaxValue) ? (int)reversedX : 0;
 }
 */
+/*3.Palindrome Number-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+public bool IsPalindrome(int x) {
+    if (x < 0) {
+        return false;
+    }
+    string strX = x.ToString();
+    int left = 0, right = strX.Length - 1;
+    
+    while (left < right) {
+        if (strX[left] != strX[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    
+    return true;
+}
+*/
