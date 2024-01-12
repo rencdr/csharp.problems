@@ -84,5 +84,24 @@ public class Kata
         return hw;
     }
 }
+*/
+/*6.Given an array of integers.
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+If the input is an empty array or is null, return an empty array.
 
+public class Kata
+{
+    public static int[] CountPositivesSumNegatives(int[] input)
+    {
+        if(input == null || !input.Any())
+        {
+            return new int[] {};
+        }
+        
+        int countPositives = input.Count(n => n > 0);
+        int sumNegatives = input.Where(n => n < 0).Sum();
+
+        return new int[] { countPositives, sumNegatives };
+    }
+}
 */
