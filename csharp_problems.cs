@@ -105,3 +105,13 @@ public class Kata
     }
 }
 */
+/*7.We need a function that can transform a number (integer) into a string.
+public class Kata
+{
+  public static string NumberToString(int num)
+  {
+    string strnum = num.ToString();
+    return strnum; 
+  }
+}
+*/
