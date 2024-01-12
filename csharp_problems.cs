@@ -71,3 +71,18 @@ public int RomanToInt(string s) {
     return result;
 }
 */
+/*5.Create a method that takes as input a name, city, and state to welcome a person. Note that name will be an array consisting of one or more values that should be joined together with one space between each, and the length of the name array in test cases will vary.
+This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
+
+public class Kata
+{
+    public static string SayHello(string[] name, string city, string state)
+    {
+        string hello = "Hello,";
+        string welcome = "Welcome to";
+        string hw = $"{hello} {string.Join(" ", name)}! {welcome} {city}, {state}!";
+        return hw;
+    }
+}
+
+*/
