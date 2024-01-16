@@ -165,6 +165,32 @@ public class Kata
         }
     }
 }
-
-
 */
+/*
+10.Complete the function that takes two integers (a, b, where a < b) and return an array of all integers 
+between the input parameters, including them.
+
+public class Kata
+{
+    public static int[] Between(int a, int b)
+    {
+        if (a < b)
+        {
+            int[] result = new int[b - a + 1];
+            
+            for (int i = 0; i <= b - a; i++)
+            {
+                result[i] = a + i;
+            }
+
+            return result;
+        }
+        else
+        {
+           
+            return new int[0]; 
+        }
+    }
+}
+*/
+
