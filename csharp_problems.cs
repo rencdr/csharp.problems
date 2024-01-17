@@ -232,3 +232,23 @@ public class Kata {
   }
 }
 */
+/*
+13.Write a function which calculates the average of the numbers in a given list.
+using System;
+using System.Linq;
+
+class AverageSolution
+{
+    public static double FindAverage(double[] array)
+    {
+        if (array == null || array.Length == 0)
+        {
+            return 0;
+        }
+
+        return array.Average();
+    }
+}
+
+
+*/
