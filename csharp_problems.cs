@@ -275,3 +275,21 @@ public static class Kata
     }
 }
 */
+/*
+15.Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+using System;
+using System.Linq;
+
+public static class Kata
+{
+    public static string Disemvowel(string str)
+    {
+      
+        char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+
+        string result = new string(str.Where(c => !vowels.Contains(c)).ToArray());
+
+        return result;    }
+}
+*/
