@@ -293,3 +293,30 @@ public static class Kata
         return result;    }
 }
 */
+/*
+16.Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
+
+using System;
+
+public class Sum
+{
+    public int GetSum(int a, int b)
+    {
+        if (a == b)
+        {
+            return a;
+        }
+
+        int sum = 0;
+        int start = Math.Min(a, b);
+        int end = Math.Max(a, b);
+
+        for (int i = start; i <= end; i++)
+        {
+            sum += i;
+        }
+
+        return sum;
+    }
+}
+*/
