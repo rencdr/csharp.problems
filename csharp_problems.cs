@@ -320,3 +320,35 @@ public class Sum
     }
 }
 */
+/*
+17.Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+Mind the input validation.
+
+using System;
+using System.Linq;
+
+public static class Kata
+{
+    public static int Sum(int[] numbers)
+    {
+        if (numbers == null || numbers.Length < 2) 
+        {
+            return 0;
+        }
+    
+        int min = int.MaxValue;
+        int max = int.MinValue;
+        int sum = 0;
+        
+        foreach(var x in numbers) 
+        {
+            if (x > max) max = x;
+            if (x < min) min = x;
+            sum += x;
+        }
+        
+        return sum - min - max;
+    }
+}
+*/
