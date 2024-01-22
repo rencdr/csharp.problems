@@ -410,3 +410,16 @@ public class LineNumbering
     }
 }
 */
+/*
+21.Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+public class Solution {
+    public void MoveZeroes(int[] nums) {
+        List<int> nonZeros = nums.Where(num => num != 0).ToList();
+        int zeroCount = nums.Length - nonZeros.Count;
+
+        nonZeros.CopyTo(nums);
+        Array.Fill(nums, 0, nonZeros.Count, zeroCount);
+    }
+}
+*/
