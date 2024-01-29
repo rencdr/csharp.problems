@@ -427,5 +427,40 @@ public class Solution {
 22.Complete the function that takes 3 numbers x, y and k (where x ≤ y), and returns the number of integers within the range [x..y] (both ends included) that are divisible by k.
 
   public static long DivisibleCount(long x, long y, long k) => y / k - x / k + (x % k == 0 ? 1 : 0);
+*/
+/*
+23.The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior architect, comes up with a plan to remove the most boring exhibitions. She gives them a rating, and then removes the one with the lowest rating.
+However, just as she finished rating all exhibitions, she's off to an important fair, so she asks you to write a program that tells her the ratings of the items after one removed the lowest one. Fair enough.
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Remover
+{
+    public static List<int> RemoveSmallest(List<int> numbers)
+    {
+        if (numbers.Count == 0)
+        {
+            return numbers; 
+        }
+
+        int minValue = numbers[0];
+        int minIndex = 0;
+
+        for (int i = 1; i < numbers.Count; i++)
+        {
+            if (numbers[i] < minValue)
+            {
+                minValue = numbers[i];
+                minIndex = i;
+            }
+        }
+
+        List<int> result = new List<int>(numbers);
+        result.RemoveAt(minIndex);
+
+        return result;
+    }
+}
 */
