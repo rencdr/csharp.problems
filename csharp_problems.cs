@@ -423,3 +423,9 @@ public class Solution {
     }
 }
 */
+/*
+22.Complete the function that takes 3 numbers x, y and k (where x ≤ y), and returns the number of integers within the range [x..y] (both ends included) that are divisible by k.
+
+  public static long DivisibleCount(long x, long y, long k) => y / k - x / k + (x % k == 0 ? 1 : 0);
+
+*/
